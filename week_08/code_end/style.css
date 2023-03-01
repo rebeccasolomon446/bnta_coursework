@@ -1,0 +1,136 @@
+body, h1, h2{   /* gets rid of white space on top, h1*/
+    margin: 0;
+}
+
+
+header {
+    background-color: rgb(250, 205, 120);
+}
+
+.padded_content {
+    padding: 2rem 10%;
+}
+
+main {
+    background-color: purple;
+}
+
+footer {
+    background-color: yellow;
+}
+
+.products {
+    background-color: rgb(176, 255, 176);
+}
+
+.contact {
+    background-color: rgb(144, 174, 239);
+}
+
+.card.card--pink {
+    background-color: pink;
+}
+
+.card {
+    background-color: white;
+    border: 3px solid black;
+    width: fit-content;
+}
+
+
+.card img {
+    width: 250px;
+}
+
+.footer__logo {
+    width: 150px;
+}
+
+/* .card:hover {
+    background-color: yellow;
+} */
+
+button, input[type="submit"] {
+    background-color: rgb(146, 171, 223);
+    text-transform: uppercase;
+    border: 3px solid blue;
+    font-weight: bold;
+    padding: 10px;
+    width: 6rem;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: yellow;
+    transform :scale(1.1);
+    border-style: dashed;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: aliceblue;
+    transform: scale(1);
+}
+
+
+
+
+.header {
+    display:flex;
+    align-items: center;
+}
+
+.header > h1 {
+    width: 40%;
+}
+
+.header > nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.products {
+    background-color: rgb(201, 231, 201);
+}
+
+.products__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.contact {
+    background-color: azure;
+    display: flex;
+}
+
+.contact__form {
+    display: flex;
+    align-items: center;
+}
+
+.contact__form > form {
+    display: flex;
+    flex-grow:1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer nav,
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__right {
+    display: flex;
+}
